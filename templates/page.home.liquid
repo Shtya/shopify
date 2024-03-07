@@ -15,4 +15,9 @@
 
 {% for i in (1..10) %}
         {{i}}
-        {%endfor%}
+{%endfor%}
+
+{% for collection in collections %}
+    <span> {{ collection.title }} </span>
+    <img src={{ collection.image }}  />
+{% endfor %}
