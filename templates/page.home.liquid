@@ -18,6 +18,5 @@
 {%endfor%}
 
 {% for collection in collections %}
-    <span> {{ collection.title }} </span>
-    <span > {{ collection.image }}  </span>
+    <img src={{ collection.image }} width={{ '30' }} height={{ '40' }} />
 {% endfor %}
