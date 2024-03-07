@@ -1,5 +1,5 @@
 <h1> Welceom To Home page</h1>
-{% assign food = 'apple2'  %}
+{% assign food = 'app2'  %}
 
 <h3> my food is {{ food }} </h3>
 
@@ -7,5 +7,7 @@
   <h1> it's {{ food }} </h1>
   {% elsif food == 'apple2' %}
   <h1> it's apple 2 </h1>
+  {% else  %}
+  <h1> it's not food </h1>
   
 {%  endif %}
