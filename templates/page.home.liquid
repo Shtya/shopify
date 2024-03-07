@@ -19,6 +19,6 @@
 
 {% for collection in collections %}
     {%  for  product in collection.products %}
-      <img src={{ product.images }} width={{ '30' }} height={{ '40' }} />
+      <img src={{ product | img_url }} width={{ '30' }} height={{ '40' }} />
       {% endfor %}
 {% endfor %}
